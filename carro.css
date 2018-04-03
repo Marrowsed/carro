@@ -1,0 +1,59 @@
+body {
+	background-image: url(imagens/estrada.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+#carro img {
+	 position: absolute;
+	 top: 280px;
+    left: -1000px;
+    animation: moverc 5s infinite alternate;  
+}
+
+#roda1 img{
+	background-repeat: no-repeat;
+	left: -1000px;
+	top: 560px;
+	animation: moverr 5s infinite alternate; 
+
+}
+
+#roda2 img{
+	background-repeat: no-repeat;
+	left: -800px;
+	top: 560px;
+	animation: moverr_ 5s infinite alternate;
+}
+
+@keyframes moverc {
+	from {
+		left: -1000px;
+	}
+	to {
+		left: 1500px;
+	}
+}
+
+@keyframes moverr {
+	from {
+		left: -880px;
+		transform: rotate(0deg);
+	}
+	to {
+		left: 1600px;
+		transform: rotate(6000deg);
+	}
+}
+
+@keyframes moverr_ {
+	from {
+		left: -330px;
+		transform: rotate(0deg);
+	}
+	to {
+		left: 2200px;
+		transform: rotate(6000deg);
+	}
+}
